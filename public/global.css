@@ -54,6 +54,7 @@ a {
 }
 
 .doses {
+    display: inline-flex;
     margin: 0 auto;
 }
 

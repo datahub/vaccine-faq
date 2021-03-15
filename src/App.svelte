@@ -25,18 +25,29 @@
 </script>
 
 <style>
+
+	.more-data{
+		margin: 30px auto;
+		text-align: center;
+	}
+	.more-data a{
+		text-decoration: underline;
+		text-decoration-color: #dbd1c0;
+	}
 </style>
 
 <div class="flex-container">
-	<!-- <div class="doses"> -->
+	<div class="doses">
 		{#each doses as dose, i}
 		<Doses stat = {dose.stat} number = {dose.number} rank = {dose.rank} />
 		{/each}
-		
+	</div>
+	<div class="more-data"><a href="https://projects.jsonline.com/topics/coronavirus/tracking/covid-19-cases-testing-and-deaths-in-wisconsin.html">See more coronavirus and vaccine data &rarr;</a></div>
+	<div>
 		{#each phases as phase, i}
 		<Phases phase = {phase.phase} rolloutDate = {phase.rolloutDate} phaseRequirements = {phase.phaseRequirements} status = {phase.status} checkmark = {phase.checkmark} />
 		{/each}
-	<!-- </div> -->
+	</div>
 
 	<div class="topic-menu">
 		<p class="how-to">Answers below are based on questions submitted from readers and information gleaned from previous reporting.</p>
@@ -48,7 +59,7 @@
 				<li><div><a href="#basics">Vaccine basics</a></div></li>
 			</ul>
 		</div>
-		<div class="form-cta"><span><a href="https://forms.gle/mPVtinmDDDmbNsVQ9"><i class="fas fa-question-circle"></i> Ask us a question about vaccine distribution</a></span></div>
+		<div class="form-cta"><span><a href="https://forms.gle/MkFLvnAduL58rj3B9"><i class="fas fa-question-circle"></i> Ask us a question about vaccine distribution</a></span></div>
 	</div>
 
 	{#each categories as category, i}

@@ -50,11 +50,6 @@ export let checkmark;
     font-weight: 400;
 }
 
-.phase .fas .fa-check-square, .phase .far .fa-square{
-    font-size: 1.7em;
-    color: #d78401;
-}
-
 </style>
 
 
