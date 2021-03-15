@@ -32,7 +32,7 @@
     font-family: 'Unify Sans', Tahoma, sans-serif;
     width:30%;
     max-width: 400px;
-    margin: 5px 18px;
+    margin: 30px 18px;
     font-size: 18px;
 }
 .category-context h4{
@@ -40,13 +40,13 @@
     font-size: 1.5em;
     margin-block-start: 0;
 }
-.category-context::after{
+.category-context::before{
     display: block;
     position: absolute;
-    top: 50px;
+    top: 0px;
     left: 20px;
     content: " ";
-    width: 50px;
+    width: 29%;
     height: 20px;
     border-top: 7px solid #415bca; /*#d78401; */
 }
