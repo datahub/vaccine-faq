@@ -5,6 +5,9 @@ body {
 a {
     color: #d78401;
 }
+ul{
+    padding-inline-start: 20px;
+}
 .kicker {
     width: 100%;
     color: #415bca;
@@ -57,9 +60,8 @@ a {
     display: inline-flex;
     margin: 0 auto;
 }
-
-.flip-mobile {
-    display: none;
+.phase-list{
+    margin: 0 auto;
 }
 
 .mjs-section-break-color {
@@ -152,7 +154,6 @@ a {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .extra-container {
@@ -162,7 +163,6 @@ a {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .label-block {
@@ -191,15 +191,16 @@ a {
 }
 
 .sticky-banner{
+    font-family: 'Unify Sans', Tahoma, sans-serif;
     background-color: #d78401;
     width: 100%;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     z-index: 990;
     height: 20px;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .sticky-banner span{
@@ -212,32 +213,18 @@ a {
     margin: 5px 0;
 }
 
-@media(max-width: 1024px) {
-    .logos img.js {
-        width: 78px;
-        height: 40px;
-        margin: 5px 10px;
-    }
-
-    .logos img.wuwm {
-        width: 157px;
-        height: 40px;
-        margin: 5px 10px;
-    }
-
-    .logos img.usatw {
-        width: 250px;
-        height: 40px;
-        margin: 5px 10px;
-    }
-
-    .logos .series-title {
-        font-size: 1.3em;
-    }
+.timestamp{
+    margin-left:0;
+    color: darkred;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 @media(max-width: 768px) {
     .flex-container {
+        display: flex;
+        flex-wrap: wrap;
         padding: 0 10px;
     }
 
@@ -245,36 +232,13 @@ a {
         margin: 5%;
         font-size: 2rem;
     }
-
-    .logos img.js {
-        width: 66px;
-        height: 30px;
-        margin: 5px 10px;
+    .extra-container {
+        flex-direction: column;
+    }
+    .sticky-banner{
+        font-size: 10px;
     }
 
-    .logos img.wuwm {
-        width: 118px;
-        height: 30px;
-        margin: 5px 10px;
-    }
-
-    .logos img.usatw {
-        width: 188px;
-        height: 30px;
-        margin: 5px 10px;
-    }
-
-    .logos .series-title {
-        font-size: 1.3em;
-    }
-
-    .flip-desktop {
-        display: none;
-    }
-
-    .flip-mobile {
-        display: inline-flex;
-    }
 }
 
 @media(max-width: 600px) {
@@ -283,18 +247,6 @@ a {
         font-size: 12px;
         padding: 5px;
     }
-
-    .numbers {
-        text-align: center;
-        font-weight: 900;
-        font-size: 1.4em;
-    }
-
-        .numbers div {
-            background-color: #415bca;
-            margin: 0 4%;
-            padding: 10px;
-        }
 
         .form-cta span {
             background-color: transparent;
@@ -326,18 +278,20 @@ a {
             text-align: center;
         }
 
-        .extra-container {
+        .doses {
             flex-direction: column;
-        }
-
-        .reporters {
-            width: 100%;
-            margin-right: 0;
         }
 
         .related {
             width: 100%;
             margin-left: 0;
+        }
+        .credits {
+            width: 100%;
+            margin-left: 0;
+        }
+        .sticky-banner{
+            font-size: 10px;
         }
     }
 
@@ -355,27 +309,19 @@ a {
         .topper-subhead {
             line-height: 20px;
         }
-
-        .logos img.js {
-            width: 44px;
-            height: 20px;
-            margin: 5px 10px;
+        .extra-container {
+            flex-direction: column;
         }
-
-        .logos img.wuwm {
-            width: 78px;
-            height: 20px;
-            margin: 5px 10px;
+        .related {
+            width: 100%;
+            margin-left: 0;
         }
-
-        .logos img.usatw {
-            width: 125px;
-            height: 20px;
-            margin: 5px 10px;
+        .credits {
+            width: 100%;
+            margin-left: 0;
         }
-
-        .logos .series-title {
-            font-size: 1.1em;
+        .sticky-banner{
+            font-size: 10px;
         }
     }
 
@@ -387,5 +333,16 @@ a {
 
         .form-cta span {
             font-size: 1em;
+        }
+        .related {
+            width: 100%;
+            margin-left: 0;
+        }
+        .credits {
+            width: 100%;
+            margin-left: 0;
+        }
+        .sticky-banner{
+            font-size: 10px;
         }
     }
